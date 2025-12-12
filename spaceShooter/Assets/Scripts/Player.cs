@@ -1,9 +1,12 @@
+using System.Data;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovement : Damageable
 {
     [SerializeField] float speed = 1;
-    [SerializeField] GameObject bullet;
+    [SerializeField] PewPew bullet;
+    [SerializeField] private int playerDamage = 1;
+
     Vector2 destination;
 
     [SerializeField] float pewpewRate = 1;
@@ -66,6 +69,16 @@ public class PlayerMovement : MonoBehaviour
     void PewPew()
     {   
         
-        Instantiate(bullet, transform.position, Quaternion.identity);
+        PewPew newBullet = Instantiate(bullet, transform.position, Quaternion.identity);
+        newBullet.SetDamage(playerDamage);
+    }
+  public void Increment(StatType stat)
+    {
+        if(stat == StatType.Damage)
+        {
+            
+        }
+        if(stat == StatType.Speed)
+        playerDamage++;
     }
 }
