@@ -19,7 +19,7 @@ public class Spawner : MonoBehaviour
         
         Vector2 pivot = transform.position;
 
-        Vector2 randomPos = new Vector2(pivot.x + Random.Range(-1.4f,5.4f), pivot.y);
+        Vector2 randomPos = new Vector2(pivot.x + Random.Range(-1.4f,3.4f), pivot.y);
 
         Instantiate (enemy, randomPos, Quaternion.identity);
 

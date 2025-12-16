@@ -6142,7 +6142,8 @@ MonoBehaviour:
   health: 3
   explosion: {fileID: 5687353789161268483, guid: 1dbcf966387c11d4d883f6bc9cf0175c, type: 3}
   speed: 5
-  bullet: {fileID: 7330268497732155191, guid: a266cb040084f1d4ab89bd1f3da3dcaa, type: 3}
+  bullet: {fileID: 7592165311156252144, guid: a266cb040084f1d4ab89bd1f3da3dcaa, type: 3}
+  playerDamage: 1
   pewpewRate: 1
 --- !u!50 &1947514008
 Rigidbody2D:

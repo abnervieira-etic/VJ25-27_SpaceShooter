@@ -20,7 +20,7 @@ public class Enemy : Damageable
            player.TakeDamage(collisionDamage);
 
         }  
-        else if(collision.gameObject.CompareTag("PlayerBullet")== false)
+        else if(collision.gameObject.CompareTag("Bullet")== false)
         {
             Die();
         }                                           

@@ -19,7 +19,7 @@ public class PewPew : MonoBehaviour
         Damageable enemy = collision.gameObject.GetComponent<Damageable>();
         if (enemy != null)
         {
-            enemy.TakeDamage(1);
+            enemy.TakeDamage(damage);
         }
         Destroy(gameObject);
     }
